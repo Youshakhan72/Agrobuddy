@@ -29,8 +29,9 @@ function ScrollToTop() {
 }
 
 function App() {
+  const basename = import.meta.env.MODE === 'production' ? '/Agrobuddy' : '/'
   return (
-    <Router basename="/Agrobuddy">
+    <Router basename={basename}>
       <ScrollToTop />
       <div className="min-h-screen bg-gray-50">
         <Navbar />

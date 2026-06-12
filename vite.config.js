@@ -10,17 +10,16 @@ function copy404Plugin() {
     name: 'copy-404',
     closeBundle() {
       const dist = resolve('dist')
-      fs.copyFileSync(
-        resolve(dist, 'index.html'),
-        resolve(dist, '404.html')
-      )
+      const indexPath = resolve(dist, 'index.html')
+      if (fs.existsSync(indexPath)) {
+        fs.copyFileSync(indexPath, resolve(dist, '404.html'))
+      }
     }
   }
 }
 
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
   plugins: [react(), copy404Plugin()],
-  // Use the same base path as the GitHub Pages deployment (/Agrobuddy/)
-  // so the built app and assets load correctly in production.
-  base: '/Agrobuddy/',
-})
+  // Use '/Agrobuddy/' for production (GitHub Pages) and '/' for local dev
+  base: mode === 'production' ? '/Agrobuddy/' : '/',
+}))
