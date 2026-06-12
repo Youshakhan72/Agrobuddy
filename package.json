@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "AgroBuddy - Hackathon Demo",
   "type": "module",
-  "homepage": "https://Amer-Anus.github.io/Agrobuddy/",
+  "homepage": "https://youshakhan72.github.io/Agrobuddy/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
