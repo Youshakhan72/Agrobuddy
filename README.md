@@ -1,7 +1,3 @@
-# Agrobuddy
-Smart Agriculture related project for Winnovx 2K26 @ Stanley Engg Colege
-
-
 # AgroBuddy
 
 A modern, mobile-friendly frontend demo website for Indian farmers. "WITHOUT INTERNET ACCESS just GO ON ONE TAP" 
@@ -45,12 +41,7 @@ npm install
 npm run dev
 ```
 
-3. Open your browser and navigate to `http://localhost:5173` (or the port shown in the terminal)
-
-### Deployment
-
-- The site is automatically built and deployed to GitHub Pages on each push to the `main` branch.
-- Live URL: `https://amer-anus.github.io/Agrobuddy/`
+3. Open your browser and navigate to `http://localhost:5173`
 
 ### Build for Production
 
@@ -72,3 +63,93 @@ agritech/
 │   │   ├── WeatherAlerts.jsx
 │   │   ├── MarketPrices.jsx
 │   │   ├── ResourceOptimization.jsx
+│   │   ├── DiseaseDetection.jsx
+│   │   ├── AIChatbot.jsx
+│   │   ├── GovernmentSchemes.jsx
+│   │   └── Footer.jsx
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   ├── CropRecommendationPage.jsx
+│   │   ├── WeatherAlertsPage.jsx
+│   │   ├── MarketPricesPage.jsx
+│   │   ├── ResourceOptimizationPage.jsx
+│   │   ├── DiseaseDetectionPage.jsx
+│   │   ├── AIChatbotPage.jsx
+│   │   └── GovernmentSchemesPage.jsx
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── index.html
+├── package.json
+├── vite.config.js
+├── tailwind.config.js
+└── postcss.config.js
+```
+
+## Features Overview
+
+### 1. Crop Recommendation
+- Input: Soil type, season (Kharif/Rabi/Zaid), location
+- Output: Recommended crop, expected yield, fertilizer advice
+
+### 2. Weather & Climate Alerts
+- Current weather conditions (temperature, rainfall, humidity)
+- Alert banners for rain, heatwave, drought
+- Best sowing time recommendations
+
+### 3. Market Price Trend Analysis
+- Crop and mandi selection
+- Price trend visualization (placeholder)
+- AI-powered sell/hold recommendations
+
+### 4. Resource Optimization
+- Crop type and soil moisture inputs
+- Irrigation schedule recommendations
+- Fertilizer quantity suggestions
+- Water-saving tips
+
+### 5. Crop Disease Detection
+- Image upload interface
+- Disease identification
+- Treatment recommendations
+
+### 6. AgroBuddy
+- WhatsApp-style chat interface
+- Sample question buttons
+- Voice input icon (visual only)
+- Context-aware responses
+
+### 7. Government Scheme Recommender
+- State, land size, crop type inputs
+- Eligible scheme cards
+- Benefits and eligibility information
+
+## Design Features
+
+- ✅ Multi-page application with React Router
+- ✅ Fully responsive (mobile, tablet, desktop)
+- ✅ Navigation between different sections/pages
+- ✅ Card-based layout
+- ✅ Green agriculture color theme
+- ✅ Clean, modern UI
+- ✅ Farmer-friendly language
+- ✅ Accessible and user-friendly
+
+## Notes
+
+- Multi-page application - each feature has its own page
+- All AI outputs use dummy data for demo purposes
+- Ready to be connected to backend APIs
+- All sections are clearly separated into individual pages
+- Mobile menu for navigation on small screens
+- Active page highlighting in navigation bar
+
+## Customization
+
+- Update team name and contact info in `Footer.jsx`
+- Modify color scheme in `tailwind.config.js`
+- Replace dummy data with actual API calls in respective components
+
+## License
+
+Built for Hackathon Demo
